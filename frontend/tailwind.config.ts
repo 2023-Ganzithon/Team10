@@ -7,6 +7,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      backGroundColor: "#F2F4F6",
+      white: "#FFFFFF",
+      black: "#000000",
+      outerBackgroundColor: "#111111",
+    },
     extend: {
       fontFamily: {
         "Pretendard-Regular": ["Pretendard-Regular"],
