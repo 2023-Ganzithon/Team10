@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function SurveyText() {
   return (
-    <div>index</div>
+    <div><h1>
+    
+    </h1></div>
   )
 }

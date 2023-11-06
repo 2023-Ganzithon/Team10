@@ -9,8 +9,6 @@ export default function Home() {
     <div>
       <Header />
       <SectionContainer className=" p-4">안녕하세요</SectionContainer>
-      <LeafIcon />
-      <MainLogo />
     </div>
   );
 }

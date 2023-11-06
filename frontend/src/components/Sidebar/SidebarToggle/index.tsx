@@ -18,7 +18,7 @@ export const SidebarToggle = ({
   return (
     <button
       onClick={toggle}
-      className="absolute right-4 top-8 flex items-center justify-center rounded-full bg-transparent"
+      className="z-50 flex items-center justify-center rounded-full bg-transparent"
     >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path

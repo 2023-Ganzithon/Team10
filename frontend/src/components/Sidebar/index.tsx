@@ -6,7 +6,7 @@ import { SidebarToggle } from "./SidebarToggle";
 
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 87% 3%)`,
+    clipPath: `circle(${height * 2 + 200}px at 73% 6%)`,
     transition: {
       duration: 0.5,
       type: "spring",
@@ -15,7 +15,7 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: "circle(0.1px at 87% 3%)",
+    clipPath: "circle(0.1px at 73% 6%)",
     transition: {
       delay: 0.1,
       type: "spring",
@@ -44,12 +44,12 @@ export const Sidebar = () => {
         onClick={() => toggleOpen()}
       />
       <motion.nav
-        className={`absolute right-0 top-0 flex h-screen items-center justify-end `}
+        className={`flex items-center `}
         initial={false}
         animate={isOpen ? "open" : "closed"}
       >
         <motion.div
-          className="absolute bottom-0 right-0 top-0 h-full w-[196px]  bg-white border-l-[25px] border-sidebarColor"
+          className="absolute bottom-0 right-0 top-0 h-screen w-[196px]  bg-white border-l-[25px] border-sidebarColor"
           variants={sidebar}
         >
           <Navigation toggle={() => toggleOpen()} />
