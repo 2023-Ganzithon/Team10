@@ -19,7 +19,7 @@ export default function SurveyButton({
   return (
     <button
       onClick={onClickButton}
-      className={`w-[140px] h-[88px] flex justify-center items-center  rounded-[7px]  ${
+      className={`w-[140px] h-[88px] flex justify-center items-center  rounded-[7px] text-base ${
         picked == score
           ? "bg-brandColor text-white"
           : "bg-buttonBackgroundColor"

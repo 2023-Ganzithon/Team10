@@ -1,8 +1,12 @@
 import React from "react";
+import { SURVEY_QUESTION_LENGTH } from "@/constants/survey";
 import SectionContainer from "../ui/SectionContainer";
 import SurveyText from "./SurveyText";
 import Emotion from "./Emotion.tsx";
 import ButtonGrid from "./ButtonGrid";
+import SubmitButton from "./SubmitButton";
+
+const SurveyQuestionLength = SURVEY_QUESTION_LENGTH;
 
 export default function SurveySection({
   number,
@@ -12,10 +16,11 @@ export default function SurveySection({
   content: string;
 }) {
   return (
-    <SectionContainer className="py-[40px] flex flex-col items-center">
+    <SectionContainer className="px-8 py-[40px] flex flex-col items-center">
       <SurveyText number={number} content={content} />
       <Emotion />
       <ButtonGrid number={number} />
+      {number + 1 === SurveyQuestionLength ? <SubmitButton /> : <></>}
     </SectionContainer>
   );
 }
