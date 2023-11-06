@@ -12,6 +12,7 @@ const config: Config = {
       white: "#FFFFFF",
       black: "#000000",
       outerBackgroundColor: "#111111",
+      sidebarColor: "#26ad9c",
     },
     extend: {
       fontFamily: {

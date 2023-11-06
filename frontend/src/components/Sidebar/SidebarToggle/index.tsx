@@ -24,22 +24,22 @@ export const SidebarToggle = ({
         <Path
           variants={{
             closed: {
-              d: "M 2 2.5 L 20 2.5",
-              stroke: "#e2e8f0",
+              d: "M2 2H24.6338",
+              stroke: "#B1B8C0",
             },
             open: { d: "M 3 16.5 L 17 2.5", stroke: "#101010" },
           }}
         />
         <Path
-          d="M 2 9.423 L 20 9.423"
+          d="M2.00024 10.0769H24.634"
           variants={{
-            closed: { opacity: 1, stroke: "#e2e8f0" },
+            closed: { opacity: 1, stroke: "#B1B8C0" },
             open: { opacity: 0 },
           }}
         />
         <Path
           variants={{
-            closed: { d: "M 2 16.346 L 20 16.346", stroke: "#e2e8f0" },
+            closed: { d: "M2.00024 19.0509H24.634", stroke: "#B1B8C0" },
             open: { d: "M 3 2.5 L 17 16.346", stroke: "#101010" },
           }}
         />

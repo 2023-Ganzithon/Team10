@@ -1,6 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./Item";
+import { NavigationItems } from "@/constants/sidebar";
 
 const variants = {
   open: {
@@ -10,15 +11,14 @@ const variants = {
     transition: { staggerChildren: 0.05, staggerDirection: -1 },
   },
 };
-const itemIds = ["About", "Video", "Gallery", "Board"];
 
 export const Navigation = ({ toggle }: { toggle: React.MouseEventHandler }) => (
   <motion.ul
     variants={variants}
-    className={`absolute right-10 top-10 w-20 p-2`}
+    className={`absolute flex flex-col w-full text-[19px] top-20 gap-[45px] items-center `}
   >
-    {itemIds.map((i) => (
-      <MenuItem text={i} key={i} toggle={toggle} />
+    {NavigationItems.map(({ title, href }) => (
+      <MenuItem text={title} key={title} href={href} toggle={toggle} />
     ))}
   </motion.ul>
 );

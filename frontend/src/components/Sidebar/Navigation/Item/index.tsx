@@ -24,9 +24,11 @@ const variants = {
 
 export const MenuItem = ({
   text,
+  href,
   toggle,
 }: {
   text: string;
+  href: string;
   toggle: React.MouseEventHandler;
 }) => {
   return (
@@ -37,10 +39,7 @@ export const MenuItem = ({
       whileTap={{ scale: 0.95 }}
       onClick={toggle}
     >
-      <Link
-        href={`/${text.toLowerCase()}`}
-        className=" z-300 w-26 border-2 border-solid font-poorStory text-2xl font-extrabold  text-[#101010]"
-      >
+      <Link href={href} className=" w-full border-solid  text-[#101010]">
         {text}
       </Link>
     </motion.li>

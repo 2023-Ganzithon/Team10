@@ -6,7 +6,7 @@ import { SidebarToggle } from "./SidebarToggle";
 
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 132px 42px)`,
+    clipPath: `circle(${height * 2 + 200}px at 87% 3%)`,
     transition: {
       duration: 0.5,
       type: "spring",
@@ -15,7 +15,7 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: "circle(0.1px at 132px 42px)",
+    clipPath: "circle(0.1px at 87% 3%)",
     transition: {
       delay: 0.1,
       type: "spring",
@@ -25,13 +25,13 @@ const sidebar = {
   },
 };
 
-export const Menu = () => {
+export const Sidebar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
     <>
       <motion.div
-        className={`absolute bottom-0 left-0 top-0 hidden h-screen w-screen bg-black opacity-50  md:hidden`}
+        className={`absolute bottom-0 left-0 top-0 hidden h-screen w-screen bg-black opacity-50`}
         animate={
           isOpen
             ? {
@@ -44,15 +44,16 @@ export const Menu = () => {
         onClick={() => toggleOpen()}
       />
       <motion.nav
-        className={`z-1000 absolute right-0 top-0 flex h-screen items-center justify-end md:hidden  `}
+        className={`absolute right-0 top-0 flex h-screen items-center justify-end `}
         initial={false}
         animate={isOpen ? "open" : "closed"}
       >
         <motion.div
-          className="z-900  absolute bottom-0 right-0 top-0 h-full w-40  bg-slate-200"
+          className="absolute bottom-0 right-0 top-0 h-full w-[196px]  bg-white border-l-[25px] border-sidebarColor"
           variants={sidebar}
-        />
-        <Navigation toggle={() => toggleOpen()} />
+        >
+          <Navigation toggle={() => toggleOpen()} />
+        </motion.div>
         <SidebarToggle toggle={() => toggleOpen()} />
       </motion.nav>
     </>
