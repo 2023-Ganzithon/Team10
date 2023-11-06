@@ -1,14 +1,12 @@
 import SurveySection from "@/components/SurveySection";
-import { SurveyQuestion } from "@/constants/Survey";
+import { SURVEY_QUESTION } from "@/constants/survey";
 import React from "react";
+
+const Survey = SURVEY_QUESTION;
 
 export default function page({ params }: { params: { slug: string } }) {
   const questionNumber = parseInt(params.slug);
-  const Survey = SurveyQuestion;
   return (
-    <SurveySection
-      number={questionNumber}
-      content={SurveyQuestion[questionNumber]}
-    />
+    <SurveySection number={questionNumber} content={Survey[questionNumber]} />
   );
 }

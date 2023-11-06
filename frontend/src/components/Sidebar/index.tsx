@@ -49,7 +49,7 @@ export const Sidebar = () => {
         animate={isOpen ? "open" : "closed"}
       >
         <motion.div
-          className="absolute bottom-0 right-0 top-0 h-screen w-[196px]  bg-white border-l-[25px] border-sidebarColor"
+          className="absolute bottom-0 right-0 top-0 h-screen w-[196px]  bg-white border-l-[25px] border-brandColor"
           variants={sidebar}
         >
           <Navigation toggle={() => toggleOpen()} />

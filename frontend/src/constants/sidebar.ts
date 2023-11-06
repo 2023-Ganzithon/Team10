@@ -1,5 +1,4 @@
-type NavigationItem = { title: string; href: string };
-type NavigationItemsType = NavigationItem[];
+import { NavigationItemsType } from "@/types/sidebar.types";
 
 export const NavigationItems: NavigationItemsType = [
   { title: "ESG란?", href: "/info" },

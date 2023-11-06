@@ -10,7 +10,7 @@ export default function SurveyText({
   content: string;
 }) {
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col px-8">
       <SurveyTitle number={number} />
       <SurveyContent content={content} />
     </div>

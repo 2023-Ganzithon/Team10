@@ -23,7 +23,7 @@ export default function Header() {
     );
   } else
     return (
-      <header className="flex relative w-full items-end justify-between py-10 px-8">
+      <header className="flex relative w-full items-end justify-between pt-4 pb-4 px-8">
         <PrevIcon onClick={onClick} />
       </header>
     );
