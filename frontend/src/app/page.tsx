@@ -7,7 +7,6 @@ import Header from "@/components/Header";
 export default function Home() {
   return (
     <div>
-      <Header />
       <SectionContainer className=" p-4">안녕하세요</SectionContainer>
     </div>
   );

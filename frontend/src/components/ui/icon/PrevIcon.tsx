@@ -1,8 +1,15 @@
 import React from "react";
 
-export default function PrevIcon({ className }: { className?: string }) {
+export default function PrevIcon({
+  className,
+  onClick,
+}: {
+  className?: string;
+  onClick: () => void;
+}) {
   return (
     <div
+      onClick={onClick}
       className={`${className} flex justify-center items-center w-[28px] h-[28px]`}
     >
       <svg
