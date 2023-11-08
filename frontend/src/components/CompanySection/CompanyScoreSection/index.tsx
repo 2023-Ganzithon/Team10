@@ -1,4 +1,3 @@
-import ScoreContainer from "@/components/ResultSection/UserScoreContainer";
 import SectionContainer from "@/components/ui/SectionContainer";
 import React from "react";
 import CompanyScoreContainer from "./CompanyScoreContainer";

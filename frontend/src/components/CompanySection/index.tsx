@@ -6,7 +6,7 @@ import CompanyScoreSection from "./CompanyScoreSection";
 
 export default function CompanySection() {
   return (
-    <SectionContainer className="flex items-center flex-col justify-center py-8">
+    <SectionContainer className="flex items-center flex-col justify-center py-8 mb-6">
       <CircleImage />
       <InfoTitle title={"title"} subtitle={"subtitle"} />
       <CompanyScoreSection />
