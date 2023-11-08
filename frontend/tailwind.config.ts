@@ -12,10 +12,10 @@ const config: Config = {
       white: "#FFFFFF",
       black: "#000000",
       outerBackgroundColor: "#111111",
+      commentColor: "#191919",
       brandColor: "#26ad9c",
       buttonBackgroundColor: "#F2F4F6",
       subtextColor: "#ABB1B6",
-      
     },
     extend: {
       fontFamily: {
