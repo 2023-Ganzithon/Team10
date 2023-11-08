@@ -12,6 +12,8 @@ const config: Config = {
       white: "#FFFFFF",
       black: "#000000",
       outerBackgroundColor: "#111111",
+      brandColor: "#26ad9c",
+      buttonBackgroundColor: "#F2F4F6",
     },
     extend: {
       fontFamily: {
