@@ -3,7 +3,11 @@ import React from "react";
 import ArrowIcon from "../icon/ArrowIcon";
 import { useRouter } from "next/navigation";
 
-export default function MoreButton({ linkHref='' }: { linkHref?: string }) {
+export default function MoreArrowButton({
+  linkHref = "",
+}: {
+  linkHref?: string;
+}) {
   const router = useRouter();
 
   const handleOnClick = () => {

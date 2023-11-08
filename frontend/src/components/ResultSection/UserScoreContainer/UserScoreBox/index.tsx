@@ -1,11 +1,12 @@
+import { ScoreTitleType, ScoreType } from "@/types/result";
 import React from "react";
 
-export default function ScoreBox({
+export default function UserScoreBox({
   title,
   score = "?",
 }: {
-  title: string;
-  score?: string;
+  title: ScoreTitleType;
+  score?: ScoreType;
 }) {
   return (
     <div className=" bg-buttonBackgroundColor rounded-[6.95px] w-[10.25rem] h-[10.22081rem]">

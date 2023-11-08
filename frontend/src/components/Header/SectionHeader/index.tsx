@@ -1,4 +1,4 @@
-import MoreButton from "@/components/ui/button/MoreButton";
+import MoreArrowButton from "@/components/ui/button/MoreArrowButton";
 import Title from "@/components/ui/text/Title";
 import React from "react";
 
@@ -12,7 +12,7 @@ export default function SectionHeader({
   return (
     <div className="flex w-full justify-between mb-6">
       <Title title={title} />
-      <MoreButton linkHref={linkHref} />
+      <MoreArrowButton linkHref={linkHref} />
     </div>
   );
 }
