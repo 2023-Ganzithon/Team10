@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function esgIcon({ className }: { className?: string }) {
+export default function EsgIcon({ className }: { className?: string }) {
   return (
     <div className={className}>
       <svg

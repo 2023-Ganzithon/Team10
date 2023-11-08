@@ -18,7 +18,7 @@ export default function SurveySection({
   return (
     <SectionContainer className="px-8 py-[40px] flex flex-col items-center">
       <SurveyText number={number} content={content} />
-      <Emotion />
+      <Emotion number={number} />
       <ButtonGrid number={number} />
       {number + 1 === SurveyQuestionLength ? <SubmitButton /> : <></>}
     </SectionContainer>
