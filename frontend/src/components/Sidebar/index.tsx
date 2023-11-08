@@ -31,7 +31,7 @@ export const Sidebar = () => {
   return (
     <>
       <motion.div
-        className={`absolute bottom-0 left-0 top-0 hidden h-screen w-screen bg-black opacity-50`}
+        className={`absolute bottom-0 left-0 top-0 hidden h-screen w-screen bg-black bg-opacity-70 backdrop-blur-[10px]`}
         animate={
           isOpen
             ? {
