@@ -1,7 +1,7 @@
 import React from "react";
 import SectionContainer from "../ui/SectionContainer";
-import LoadingTitle from "./title";
-import LoadingSubtitle from "./subtitle";
+import LoadingTitle from "./Title";
+import LoadingSubtitle from "./Subtitle";
 import LoadingIcon from "../ui/icon/LoadingIcon";
 
 export default function Loading() {

@@ -14,10 +14,13 @@ const config: Config = {
       outerBackgroundColor: "#111111",
       brandColor: "#26ad9c",
       buttonBackgroundColor: "#F2F4F6",
+      subtextColor: "#ABB1B6",
     },
     extend: {
       fontFamily: {
         "Pretendard-Regular": ["Pretendard-Regular"],
+        "Pretendard-ExtraBold": ["Pretendard-ExtraBold"],
+        "Pretendard-SemiBold": ["Pretendard-SemiBold"],
       },
     },
   },
