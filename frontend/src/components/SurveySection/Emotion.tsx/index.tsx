@@ -1,11 +1,11 @@
 import React from "react";
-import example from "/public/images/example.jpg";
 import SocialIcon from "@/components/ui/icon/SocialIcon";
 import EnvironmentIcon from "@/components/ui/icon/EnvironmentIcon";
 import StructureIcon from "@/components/ui/icon/StructureIcon";
 import EsgIcon from "@/components/ui/icon/EsgIcon";
 
 export default function Emotion({ number }: { number: number }) {
+
   const iconSection = () => {
     if (number <= 2) {
       return <SocialIcon />;

@@ -1,8 +1,5 @@
-import MainLogo from "@/components/ui/MainLogo";
 import SectionContainer from "../components/ui/SectionContainer";
-import LeafIcon from "../components/ui/icon/LeafIcon";
-import { Sidebar } from "@/components/Sidebar";
-import Header from "@/components/Header";
+
 
 export default function Home() {
   return (
