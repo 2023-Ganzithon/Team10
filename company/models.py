@@ -15,3 +15,12 @@ class Company(models.Model):
 
     def __str__(self):
         return self.company_name
+
+
+class Comment(models.Model):
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
+    text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at']  # created_at 필드를 기준으로 최신순으로 정렬
