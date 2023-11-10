@@ -3,8 +3,7 @@ import SectionContainer from "../components/ui/SectionContainer";
 
 export default function Home() {
   return (
-    <div>
-
+    <>
       <SectionContainer className=" p-8">
 
         <div className="flex w-full justify-between mb-6" >
@@ -33,21 +32,22 @@ export default function Home() {
       <div className="grid grid-cols-2 grid-rows-2 gap-4 p-8 ">
         <div className="w-[200px] h-[206px] bg-white rounded-[29px]">
 
-          <div className='text-zinc w-full text-23px text-base mt-4 font-Pretendard-SemiBold justify-center items-center'>
-            나의 등급
+          <div className="flex w-full justify-between mb-6">
+            <div className=' text-zinc text-23px text-base mt-4 font-Pretendard-SemiBold'>
+              나의 등급</div>
             <div className="w-[53px] h-[53px] bg-gray rounded-full"></div>
           </div>
-
-          <div className="w-[166.39px] h-[0px] border border-gray"></div>
-
-          <div className=' justify-center items-center '>
-            <div className="text-zinc text-[23px] font-semibold font-['Pretendard']">
-              추천 기업</div>
-            <div className="w-[53px] h-[53px] bg-gray rounded-full"></div>
-          </div>
-
 
         </div>
+
+        <div className="w-[166.39px] h-[0px] border border-gray"></div>
+
+        <div className=' justify-center items-center '>
+          <div className="text-zinc text-[23px] font-semibold font-['Pretendard']">
+            추천 기업</div>
+          <div className="w-[53px] h-[53px] bg-gray rounded-full"></div>
+        </div>
+
 
         <div className="w-[200px] h-[206px] bg-white rounded-[29px]">
           <div className="text-zinc text-[23px] font-semibold font-['Pretendard']">유형 탐구</div>
@@ -57,9 +57,8 @@ export default function Home() {
           </div>
         </div>
 
-
-
       </div>
-    </div >
+    </>
+
   );
 }
