@@ -11,6 +11,8 @@ const config: Config = {
       backGroundColor: "#F2F4F6",
       white: "#FFFFFF",
       black: "#000000",
+      gray: "#F2F4F6",
+      zinc: "#18181b",
       outerBackgroundColor: "#111111",
       commentColor: "#191919",
       brandColor: "#26ad9c",
