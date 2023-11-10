@@ -159,7 +159,7 @@ class CommentCreate(generics.CreateAPIView):
     serializer_class = CommentSerializer
 
 
-class CalculateSurvey(APIView):
+class CalculateSurvey(generics.ListAPIView):
     #분야별 등급 계산기
     def calculate_grade_area(self, score):
         if score >= 9:
@@ -214,7 +214,7 @@ class CalculateSurvey(APIView):
         return Response(serialized_data, status=status.HTTP_200_OK)
 
 #company 3depth(상세 정보 조회)
-class GetCompanyInfo(APIView):
+class GetCompanyInfo(generics.ListAPIView):
     def get(self, request, company_id, *args, **kwargs):
         try:
             # 주어진 company_id에 해당하는 기업 객체 가져오기
