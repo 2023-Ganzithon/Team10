@@ -161,7 +161,7 @@ class CommentCreate(generics.CreateAPIView):
 
 class CalculateSurvey(APIView):
     #분야별 등급 계산기
-    def calculate_grade(self, score):
+    def calculate_grade_area(self, score):
         if score >= 9:
             return 'A+'
         elif score >= 6:
@@ -179,9 +179,9 @@ class CalculateSurvey(APIView):
 
     def post(self, request, *args, **kwargs):
         # 클라이언트로부터 데이터 받기
-        social_grade = self.calculate_grade(int(request.data.get('social_total')))
-        env_grade = self.calculate_grade(int(request.data.get('env_total')))
-        gov_grade = self.calculate_grade(int(request.data.get('gov_total')))
+        social_grade = self.calculate_grade_area(int(request.data.get('social_total')))
+        env_grade = self.calculate_grade_area(int(request.data.get('env_total')))
+        gov_grade = self.ccalculate_grade_area(int(request.data.get('gov_total')))
         user_total_grade = self.calculate_grade(int(request.data.get('total')))
         # 기업을 등급과 일치하는 기업을 찾기
         # 선예외 처리 - 중복 기업
