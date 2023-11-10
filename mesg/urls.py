@@ -28,4 +28,4 @@ urlpatterns = [
 #이미지 파일 처리
 #if settings.DEBUG: -> 뭔가 나중에 문제 생길거같아서 일단 뺌
 #이거 배포시에는 필요 없다는데
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+#urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
