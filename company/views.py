@@ -181,7 +181,7 @@ class CalculateSurvey(APIView):
         # 클라이언트로부터 데이터 받기
         social_grade = self.calculate_grade_area(int(request.data.get('social_total')))
         env_grade = self.calculate_grade_area(int(request.data.get('env_total')))
-        gov_grade = self.ccalculate_grade_area(int(request.data.get('gov_total')))
+        gov_grade = self.calculate_grade_area(int(request.data.get('gov_total')))
         user_total_grade = self.calculate_grade(int(request.data.get('total')))
         # 기업을 등급과 일치하는 기업을 찾기
         # 선예외 처리 - 중복 기업
