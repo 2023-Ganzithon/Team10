@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from company.models import Company
-from company.serializers import CompanySerializer, CompanyAllInfoSerializer
+from company.serializers import CompanySerializer, CompanyAllSerializer
 from rest_framework import generics, status
 
 from create_dummy_data import company13, company18, company19
@@ -204,7 +204,7 @@ class CalculateSurvey(APIView):
             ).first()
 
         # CompanyAllInfoSerializer를 사용하여 응답 데이터 구성
-        serializer = CompanyAllInfoSerializer(matching_company)
+        serializer = CompanyAllSerializer(matching_company)
         serialized_data = serializer.data
 
         # total_score 필드를 추가
@@ -221,7 +221,7 @@ class GetCompanyInfo(APIView):
             company = Company.objects.get(id=company_id)
 
             # CompanyAllInfoSerializer를 사용하여 응답 데이터 구성
-            serializer = CompanyAllInfoSerializer(company)
+            serializer = CompanyAllSerializer(company)
             serialized_data = serializer.data
 
             # 클라이언트에게 응답 보내기
