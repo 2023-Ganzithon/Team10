@@ -1,12 +1,26 @@
-import Image from "next/image";
 import React from "react";
-import example from "/public/images/example.jpg";
-export default function Emotion() {
+import SocialIcon from "@/components/ui/icon/SocialIcon";
+import EnvironmentIcon from "@/components/ui/icon/EnvironmentIcon";
+import StructureIcon from "@/components/ui/icon/StructureIcon";
+import EsgIcon from "@/components/ui/icon/EsgIcon";
+
+export default function Emotion({ number }: { number: number }) {
+
+  const iconSection = () => {
+    if (number <= 2) {
+      return <SocialIcon />;
+    } else if (number <= 5) {
+      return <EnvironmentIcon />;
+    } else if (number <= 8) {
+      return <StructureIcon />;
+    } else {
+      return <EsgIcon />;
+    }
+  };
+
   return (
-    <Image
-      src={example}
-      alt="example"
-      className=" rounded-full object-cover w-[184px] h-[184px] mt-4"
-    ></Image>
+    <div className=" rounded-full flex justify-center items-center w-[184px] h-[184px] bg-buttonBackgroundColor my-4">
+      {iconSection()}
+    </div>
   );
 }
