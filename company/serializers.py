@@ -23,6 +23,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
 #기업 상세정보 모두 반환하는 시리얼라이저(설문, 순위 2depth)에서 활용
 class CompanyAllSerializer(serializers.ModelSerializer):
+    company_img = serializers.ImageField(use_url=True)
     class Meta:
         model = Company
-        fields = ['industry', 'company_name', 'company_img']
+        fields = '__all__'
