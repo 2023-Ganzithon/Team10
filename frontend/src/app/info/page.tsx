@@ -1,6 +1,9 @@
 import React from 'react';
 import Logo from "../info/Logo.png";
 import SectionContainer from "../../components/ui/SectionContainer";
+
+import ResearchIcon from "@/components/ui/icon/ResearchIcon";
+
 export default function page() {
   return (
     <>

@@ -1,7 +1,23 @@
+"use client"
+
+import React, { useState } from 'react';
+import ResearchIcon from "@/components/ui/icon/ResearchIcon";
 import SectionContainer from "../components/ui/SectionContainer";
+import { useRouter } from 'next/navigation';
+import { Router } from 'next/router';
 
 
 export default function Home() {
+
+
+  const router = useRouter();
+
+  const handleSvgClick = () => {
+    // svg 클릭 시 페이지 이동 로직
+    router.push('/info');
+  };
+
+
   return (
     <>
       <SectionContainer className=" p-8">
@@ -9,8 +25,11 @@ export default function Home() {
         <div className="flex w-full justify-between mb-6" >
           <div className="text-zinc text-[23px] font-semibold font-['Pretendard']">ESG란?</div>
 
-          <div className="flex justify-center items-center w-[2.125rem] h-[2.125rem] rounded-full bg-buttonBackgroundColor">
+          <div
+            className="flex justify-center cursor-pointer items-center w-[2.125rem] h-[2.125rem] rounded-full bg-buttonBackgroundColor">
             <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+              onClick={handleSvgClick}
+              
               xmlns="http://www.w3.org/2000/svg">
               <path d="M14.985 6.04071C15.2315 5.79413 15.2315 5.39435 14.985 5.14777L10.9668 1.12956C10.7202 0.882983 10.3204 0.882983 10.0738 1.12956C9.82725 1.37614 9.82725 1.77592 10.0738 2.0225L13.6456 5.59424L10.0738 9.16598C9.82725 9.41256 9.82725 9.81234 10.0738 10.0589C10.3204 10.3055 10.7202 10.3055 10.9668 10.0589L14.985 6.04071ZM0.425293 6.22564H14.5385V4.96284H0.425293V6.22564Z" fill="#191919"></path></svg>
           </div>
@@ -29,35 +48,51 @@ export default function Home() {
       </SectionContainer>
 
 
-      <div className="grid grid-cols-2 grid-rows-2 gap-4 p-8 ">
-        <div className="w-[200px] h-[206px] bg-white rounded-[29px]">
+      <div className="grid grid-cols-2 gap-10 p-8">
 
-          <div className="flex w-full justify-between mb-6">
-            <div className=' text-zinc text-23px text-base mt-4 font-Pretendard-SemiBold'>
+
+        <div className="w-[200px] h-[206px] mx-17px bg-white rounded-[29px] p-4 ">
+
+          <div className="flex w-full justify-center items-center space-x-6 mt-3 ">
+            <div className='text-zinc text-[23px] font-Pretendard-SemiBold'>
               나의 등급</div>
+            <div className=" w-[53px] h-[53px] bg-gray rounded-full"></div>
+          </div>
+
+
+          <div className='flex flex-col items-center justify-center mt-3'>
+            <div className="w-[166.39px] h-[0px] border  border-gray"></div>
+          </div>
+
+          <div className='flex w-full justify-center items-center space-x-6 mt-3'>
+            <div className="text-zinc text-[22px] font-Pretendard-SemiBold ">
+              추천 기업</div>
             <div className="w-[53px] h-[53px] bg-gray rounded-full"></div>
           </div>
 
-        </div>
 
-        <div className="w-[166.39px] h-[0px] border border-gray"></div>
 
-        <div className=' justify-center items-center '>
-          <div className="text-zinc text-[23px] font-semibold font-['Pretendard']">
-            추천 기업</div>
-          <div className="w-[53px] h-[53px] bg-gray rounded-full"></div>
+
         </div>
 
 
-        <div className="w-[200px] h-[206px] bg-white rounded-[29px]">
-          <div className="text-zinc text-[23px] font-semibold font-['Pretendard']">유형 탐구</div>
-          <div className="text-zinc-400 text-[9.45px] font-normal font-['Pretendard']">아직 유형 탐구를 시작하지 않으셨네요.<br />지금 시작해보세요!</div>
-          <div className="w-[93px] h-[93px] bg-gray rounded-full">
-            <img className="w-14 h-14" src="https://via.placeholder.com/56x56" />
+        <div className="w-[200px] h-[206px] bg-white rounded-[29px] p-4">
+          <div className="text-zinc text-[23px] font-Pretendard-semibold">
+            유형 탐구
+          </div>
+          <div className="text-zinc-400 text-[9.45px] font-normal font-['Pretendard']">
+            아직 유형 탐구를 시작하지 않으셨네요.<br />
+            지금 시작해보세요!
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="w-[93px] h-[93px] bg-gray rounded-full flex justify-center items-center ">
+              <ResearchIcon />
+            </div>
           </div>
         </div>
-
       </div>
+
+
     </>
 
   );
