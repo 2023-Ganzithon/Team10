@@ -212,6 +212,9 @@ class CalculateSurvey(APIView):
         if 'company_img' in serialized_data and serialized_data['company_img']:
             base_url = 'http://port-0-mesg-1igmo82clos92h44.sel5.cloudtype.app'
             serialized_data['company_img'] = urljoin(base_url, serialized_data['company_img'])
+        if 'stock' in serialized_data and serialized_data['stock']:
+            base_url = 'http://port-0-mesg-1igmo82clos92h44.sel5.cloudtype.app'
+            serialized_data['stock'] = urljoin(base_url, serialized_data['stock'])
 
         # total_score 필드를 추가
         serialized_data['user_total_grade'] = user_total_grade
@@ -233,6 +236,9 @@ class GetCompanyInfo(APIView):
             if 'company_img' in serialized_data and serialized_data['company_img']:
                 base_url = 'http://port-0-mesg-1igmo82clos92h44.sel5.cloudtype.app'
                 serialized_data['company_img'] = urljoin(base_url, serialized_data['company_img'])
+            if 'stock' in serialized_data and serialized_data['stock']:
+                base_url = 'http://port-0-mesg-1igmo82clos92h44.sel5.cloudtype.app'
+                serialized_data['stock'] = urljoin(base_url, serialized_data['stock'])
 
             # 클라이언트에게 응답 보내기
             return Response(serialized_data, status=status.HTTP_200_OK)
