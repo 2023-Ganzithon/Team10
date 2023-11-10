@@ -15,13 +15,17 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path, include  # include를 추가
+from django.urls import path, include, re_path  # include를 추가
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.static import serve
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/companies/', include('company.urls')),  # company 앱의 URLs를 포함시킴
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}), #배포시 필요해서(미디어 루트 읽어오게)
 ]
 #이미지 파일 처리
 #if settings.DEBUG: -> 뭔가 나중에 문제 생길거같아서 일단 뺌
+#이거 배포시에는 필요 없다는데
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
