@@ -1,5 +1,5 @@
+import RankSection from "@/components/RankSection";
 import SectionContainer from "../components/ui/SectionContainer";
-
 
 export default function Home() {
   return (
@@ -58,7 +58,10 @@ export default function Home() {
         </div>
 
       </div>
+              <RankSection title="ESG 기업 순위" linkHref="rank" />
+
     </>
+
 
   );
 }
