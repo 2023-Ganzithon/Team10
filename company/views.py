@@ -1,4 +1,6 @@
 # views.py
+from urllib.parse import urljoin
+
 from django.db.models import Q
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -159,7 +161,7 @@ class CommentCreate(generics.CreateAPIView):
     serializer_class = CommentSerializer
 
 
-class CalculateSurvey(generics.ListAPIView):
+class CalculateSurvey(APIView):
     #분야별 등급 계산기
     def calculate_grade_area(self, score):
         if score >= 9:
@@ -206,6 +208,10 @@ class CalculateSurvey(generics.ListAPIView):
         # CompanyAllInfoSerializer를 사용하여 응답 데이터 구성
         serializer = CompanyAllSerializer(matching_company)
         serialized_data = serializer.data
+        # 이미지 URL에 도메인 추가
+        if 'company_img' in serialized_data and serialized_data['company_img']:
+            base_url = 'http://port-0-mesg-1igmo82clos92h44.sel5.cloudtype.app'
+            serialized_data['company_img'] = urljoin(base_url, serialized_data['company_img'])
 
         # total_score 필드를 추가
         serialized_data['user_total_grade'] = user_total_grade
@@ -214,7 +220,7 @@ class CalculateSurvey(generics.ListAPIView):
         return Response(serialized_data, status=status.HTTP_200_OK)
 
 #company 3depth(상세 정보 조회)
-class GetCompanyInfo(generics.ListAPIView):
+class GetCompanyInfo(APIView):
     def get(self, request, company_id, *args, **kwargs):
         try:
             # 주어진 company_id에 해당하는 기업 객체 가져오기
@@ -223,6 +229,10 @@ class GetCompanyInfo(generics.ListAPIView):
             # CompanyAllInfoSerializer를 사용하여 응답 데이터 구성
             serializer = CompanyAllSerializer(company)
             serialized_data = serializer.data
+            # 이미지 URL에 도메인 추가
+            if 'company_img' in serialized_data and serialized_data['company_img']:
+                base_url = 'http://port-0-mesg-1igmo82clos92h44.sel5.cloudtype.app'
+                serialized_data['company_img'] = urljoin(base_url, serialized_data['company_img'])
 
             # 클라이언트에게 응답 보내기
             return Response(serialized_data, status=status.HTTP_200_OK)
