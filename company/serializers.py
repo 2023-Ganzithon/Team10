@@ -25,4 +25,5 @@ class CommentSerializer(serializers.ModelSerializer):
 class CompanyAllInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Company
-        fields = '__all__'
+        fields = ['company_name' ,
+    'company_img', 'total_grade','social_grade','env_grade', 'gov_grade', 'profit','revenue','stock','industry','division' ]
