@@ -40,7 +40,7 @@ class TopCompanyList(generics.ListAPIView):
         "A": 2,
         "B+": 1,
     }
-
+    queryset = Company.objects.all()
     queryset = Company.objects.order_by('total_grade')
     serializer_class = CompanySerializer
 
