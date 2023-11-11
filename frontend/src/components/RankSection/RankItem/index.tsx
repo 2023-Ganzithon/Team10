@@ -6,9 +6,15 @@ import example from "/public/images/example.png";
 export default function RankItem({
   className,
   index,
+  title,
+  industry,
+  image,
 }: {
   className?: string;
-  index?: number;
+  index: number;
+  title: string;
+  industry: string;
+  image: string;
 }) {
   return (
     <div
@@ -17,10 +23,10 @@ export default function RankItem({
       } border-buttonBackgroundColor ${className}`}
     >
       <div className="flex items-center ml-2">
-        <SmallCircleImage rank={2} image={example} />
+        <SmallCircleImage rank={index + 1} image={image} />
         <div className="ml-4 justify-center">
-          <div className="text-[10px] text-subtextColor">제조업</div>
-          <div className="text-[19px]">삼성전자</div>
+          <div className="text-[10px] text-subtextColor">{industry}</div>
+          <div className="text-[19px]">{title}</div>
         </div>
       </div>
       <MoreButton linkHref={`company/1`} />

@@ -7,7 +7,7 @@ export default function SmallCircleImage({
   image,
 }: {
   rank: number;
-  image: StaticImageData;
+  image: string;
 }) {
   return (
     <div
@@ -16,7 +16,13 @@ export default function SmallCircleImage({
       <div className="absolute font-Pretendard-ExtraBold flex text-white  justify-center items-center text-[12px] w-[22px] h-[22px] bg-brandColor rounded-full top-0 -left-1 ">
         {rank}
       </div>
-      <Image src={image} alt={"image"} className=" object-cover rounded-full" />
+      <Image
+        src={image}
+        alt={"image"}
+        width={50}
+        height={10}
+        className=" object-cover rounded-full"
+      />
     </div>
   );
 }

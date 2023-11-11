@@ -1,14 +1,14 @@
 import React from "react";
 
 export default function CompanyScoreBox({
-  title = "환경",
-  score = "A+",
-  index,
+  title ,
+  score ,
+  index = 1,
   className,
 }: {
   title: string;
   score?: string;
-  index: number;
+  index?: number;
   className?: string;
 }) {
   return (

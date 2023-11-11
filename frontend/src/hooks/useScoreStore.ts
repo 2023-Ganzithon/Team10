@@ -15,7 +15,7 @@ export default function useScoreStore(
     localStorage.setItem(number.toString(), score.toString());
     setPicked(score);
     if (number + 1 === SurveyQuestionLength) {
-      router.push(`/result`);
+      // router.push(`/result`);
     } else {
       router.push(`/survey/${number + 1}`);
     }

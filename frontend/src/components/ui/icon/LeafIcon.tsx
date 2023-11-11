@@ -1,9 +1,16 @@
 import React from "react";
 
-export default function LeafIcon({ className }: { className?: string }) {
+export default function LeafIcon({
+  className,
+  onClick,
+}: {
+  className?: string;
+  onClick: () => void;
+}) {
   return (
     <div
       className={`${className} flex justify-center items-center w-[28px] h-[28px]`}
+      onClick={onClick}
     >
       <svg
         width="22"

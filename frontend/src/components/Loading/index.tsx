@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import SectionContainer from "../ui/SectionContainer";
 import LoadingTitle from "./Title";
 import LoadingSubtitle from "./Subtitle";

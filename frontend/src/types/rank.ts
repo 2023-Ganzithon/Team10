@@ -10,3 +10,9 @@ export type RankClassLinkHrefType =
   | "rank/environment"
   | "rank/social"
   | "rank/structure";
+
+export type Company3RankType = {
+  industry: string;
+  company_name: string;
+  company_img: string;
+}[];

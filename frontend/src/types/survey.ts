@@ -10,3 +10,10 @@ export type SurveyAnswerType = {
   title: SurveyAnswerTitleType;
   score: number;
 }[];
+
+export type SurveyResultType = {
+  social_total: number;
+  env_total: number;
+  gov_total: number;
+  total: number;
+};
