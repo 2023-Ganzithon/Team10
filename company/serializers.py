@@ -5,7 +5,7 @@ from .models import Company, Comment
 class CompanySerializer(serializers.ModelSerializer):
     class Meta:
         model = Company
-        fields = ['industry', 'company_name', 'company_img']
+        fields = ['id','industry', 'company_name', 'company_img']
 
 
 #댓글 시리얼라이저
