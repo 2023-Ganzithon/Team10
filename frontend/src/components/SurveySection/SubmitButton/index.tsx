@@ -55,13 +55,10 @@ export default function SubmitButton() {
     const twelve = parseInt(localStorage.getItem("11") || "4");
     const thirteen = parseInt(localStorage.getItem("12") || "4");
     const fourteen = parseInt(localStorage.getItem("13") || "4");
-    // setTotal(ten + eleven + twelve + thirteen + fourteen);
 
     const total = ten + eleven + twelve + thirteen + fourteen;
     localStorage.setItem("종합", total.toString());
-    console.log(social_total, env_total, gov_total, total);
-    // mutate({ social_total, env_total, gov_total, total });
-    // router.push("/result");
+    router.push("/result");
   };
   console.log(data);
   return (

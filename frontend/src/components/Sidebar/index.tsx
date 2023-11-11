@@ -6,7 +6,7 @@ import { SidebarToggle } from "./SidebarToggle";
 
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 73% 6%)`,
+    clipPath: `circle(${height * 2 + 200}px at 79% 6%)`,
     transition: {
       duration: 0.5,
       type: "spring",
@@ -15,7 +15,7 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: "circle(0.1px at 73% 6%)",
+    clipPath: "circle(0.1px at 79% 6%)",
     transition: {
       delay: 0.1,
       type: "spring",

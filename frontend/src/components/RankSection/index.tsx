@@ -19,7 +19,6 @@ export default function RankSection({
   data?: Company3RankType;
   isLoading?: boolean;
 }) {
-  console.log(data);
   return (
     <SectionContainer className="px-8 pt-6 mb-4">
       <SectionHeader title={title} linkHref={linkHref} isMore={isMore} />

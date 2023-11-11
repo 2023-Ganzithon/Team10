@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function CompanyScoreBox({
-  title ,
-  score ,
+  title,
+  score,
   index = 1,
   className,
 }: {
@@ -17,7 +17,9 @@ export default function CompanyScoreBox({
         index === 0 ? "border-none " : "border-l-[1px]"
       }`}
     >
-      <div className=" text-subtextColor text-sm">{title}</div>
+      <div className=" text-subtextColor text-sm font-Pretendard-SemiBold">
+        {title}
+      </div>
       <div className=" font-Pretendard-SemiBold text-[28px]">{score}</div>
     </div>
   );

@@ -8,18 +8,16 @@ export default function useGetUserScore() {
   const { isLoading } = useQuery({
     queryKey: ["getUserScore"],
     queryFn: () => {
-      useEffect(() => {
-        const companyImg = localStorage.getItem("recommend");
-        setCompany(companyImg);
-        const companyId = localStorage.getItem("recommendId");
-        setCompanyId(companyId);
-        const userScore = localStorage.getItem("total_grade");
-        if (userScore) {
-          setUserScore(userScore);
-        } else {
-          setUserScore("?");
-        }
-      }, []);
+      const localCompanyImg = localStorage.getItem("recommend");
+      setCompany(localCompanyImg);
+      const localCompanyId = localStorage.getItem("recommendId");
+      setCompanyId(localCompanyId);
+      const localUserScore = localStorage.getItem("total_grade");
+      if (localUserScore) {
+        setUserScore(localUserScore);
+      } else {
+        setUserScore("?");
+      }
     },
   });
 

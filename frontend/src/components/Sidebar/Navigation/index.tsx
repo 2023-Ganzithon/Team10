@@ -15,7 +15,7 @@ const variants = {
 export const Navigation = ({ toggle }: { toggle: React.MouseEventHandler }) => (
   <motion.ul
     variants={variants}
-    className={`absolute flex flex-col w-full text-[19px] top-20 gap-[45px] items-center `}
+    className={`absolute flex flex-col w-full text-[16px] top-24 gap-4 items-center `}
   >
     {NavigationItems.map(({ title, href }) => (
       <MenuItem text={title} key={title} href={href} toggle={toggle} />

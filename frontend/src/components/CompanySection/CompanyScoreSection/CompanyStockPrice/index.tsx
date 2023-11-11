@@ -7,8 +7,10 @@ export default function CompanyStockPrice() {
   const resultData = useContext(ResultDataContext);
 
   return (
-    <div className=" mt-8 mb-8">
-      <div className="text-[14px] text-subtextColor mb-4">주가 그래프</div>
+    <div className=" mt-6 mb-6">
+      <div className="text-[14px] text-subtextColor ml-8 mb-4 font-Pretendard-SemiBold">
+        주가 그래프
+      </div>
       {resultData ? (
         <Image alt="image" src={resultData.stock} width={500} height={300} />
       ) : (
