@@ -1,7 +1,7 @@
 # Team10
 
 # 쓱 - 하고 보는 나의 ESG 정보 , 미쓱(Mesg)
-#https://mesg-xi.vercel.app/
+https://mesg-xi.vercel.app/
 ---
 ![image](https://github.com/2023-Ganzithon/Team10/assets/126189239/fed58ec3-df63-4a36-941e-c532cfb2a139)
 
