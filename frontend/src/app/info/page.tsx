@@ -1,12 +1,10 @@
 import React from "react";
-import Logo from "../info/Logo.png";
 import SectionContainer from "../../components/ui/SectionContainer";
+import LogoIcon from "@/components/ui/icon/LogoIcon";
 export default function page() {
   return (
     <>
       <SectionContainer className="p-8 mb-8">
-        {/* <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 px-4 py-10 bg-white rounded-[29px]"> */}
-
         <div className="flex relative w-full pt-4 pb-4">
           <div
             className="undefined flex px-4 w-[287px] h-[74px] 
@@ -15,7 +13,6 @@ export default function page() {
             ESG란 무엇일까요?
           </div>
         </div>
-        {/* text-zinc-900 */}
         <div
           className="flex justify-around
         text-zinc text-sm font-medium font-['Pretendard']"
@@ -65,7 +62,7 @@ export default function page() {
             className="w-[122.90px] h-[122.90px] bg-gray rounded-full 
         flex justify-center items-center"
           >
-            <img src={Logo.src} alt="MeSSG_Logo" />
+            <LogoIcon />
           </div>
         </div>
 

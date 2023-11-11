@@ -16,7 +16,6 @@ export default function RankPage() {
   const { data: social3RankData, isLoading: social3RankLoading } =
     useGetSocial3Rank();
 
-  console.log(total3RankData, Env3RankData, gov3RankData, social3RankData);
   const RankClass = [
     {
       title: "종합",
@@ -47,7 +46,7 @@ export default function RankPage() {
     <>
       {RankClass.map(({ title, linkHref, data, isLoading }, index) => (
         <RankSection
-          key={index}
+          key={title}
           title={title}
           linkHref={linkHref}
           data={data || undefined}

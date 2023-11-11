@@ -60,7 +60,6 @@ export default function SubmitButton() {
     localStorage.setItem("종합", total.toString());
     router.push("/result");
   };
-  console.log(data);
   return (
     <>
       <button

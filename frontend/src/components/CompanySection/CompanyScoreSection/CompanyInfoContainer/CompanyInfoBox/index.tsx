@@ -8,11 +8,11 @@ export default function CompanyInfoBox({
   content?: string | number;
 }) {
   return (
-    <div className=" bg-buttonBackgroundColor flex flex-col items-center w-[173px] h-[146px] rounded-[6.95px] ">
+    <div className=" bg-buttonBackgroundColor flex flex-col items-center md:w-[173px] h-[146px] rounded-[6.95px] ">
       <div className=" text-subtextColor text-[16px] mt-[19px] font-Pretendard-SemiBold">
         {title}
       </div>
-      <div className=" text-black font-Pretendard-SemiBold text-[21px] mt-[24px]">
+      <div className=" text-black font-Pretendard-SemiBold md:text-[21px] text-[16px] mt-[24px]">
         {content}
         {title === "매출액" ? " 억원" : title === "영업이익" ? " 억원" : ""}
       </div>

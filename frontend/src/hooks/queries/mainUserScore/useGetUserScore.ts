@@ -18,6 +18,7 @@ export default function useGetUserScore() {
       } else {
         setUserScore("?");
       }
+      return company;
     },
   });
 
