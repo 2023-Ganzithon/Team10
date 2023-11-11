@@ -4,7 +4,7 @@
 
 ---
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/78ab5f63-4c04-45b4-aec7-400417f683ca/a327651d-96e9-4461-99b7-8ab8b2babbd1/Untitled.png)
+![미쓱](https://prod-files-secure.s3.us-west-2.amazonaws.com/78ab5f63-4c04-45b4-aec7-400417f683ca/a327651d-96e9-4461-99b7-8ab8b2babbd1/Untitled.png)
 
 1️⃣ **미쓱(Mesg)은 지속 가능한 미래를 위해 투자하는 똑똑한 투자자들을 위한 서비스를 제공합니다.** 
 
