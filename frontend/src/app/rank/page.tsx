@@ -45,9 +45,9 @@ export default function RankPage() {
   ];
   return (
     <>
-      {RankClass.map(({ title, linkHref, data, isLoading }) => (
+      {RankClass.map(({ title, linkHref, data, isLoading }, index) => (
         <RankSection
-          key={title}
+          key={index}
           title={title}
           linkHref={linkHref}
           data={data || undefined}

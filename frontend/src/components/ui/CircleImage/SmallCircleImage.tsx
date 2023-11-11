@@ -1,6 +1,5 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
-import example from "/public/images/example.png";
+import Image from "next/image";
 
 export default function SmallCircleImage({
   rank,

@@ -1,7 +1,6 @@
 import SmallCircleImage from "@/components/ui/CircleImage/SmallCircleImage";
 import MoreButton from "@/components/ui/button/MoreButton";
 import React from "react";
-import example from "/public/images/example.png";
 
 export default function RankItem({
   id,

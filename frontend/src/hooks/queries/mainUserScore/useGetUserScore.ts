@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function useGetUserScore() {
   const [userScore, setUserScore] = useState("?");

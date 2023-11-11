@@ -5,7 +5,7 @@ import LoadingIcon from "@/components/ui/icon/LoadingIcon";
 import useGetUserScore from "@/hooks/queries/mainUserScore/useGetUserScore";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function MainUserScore() {
   const { company, companyId, userScore, isLoading } = useGetUserScore();
