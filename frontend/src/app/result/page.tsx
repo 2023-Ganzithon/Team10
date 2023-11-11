@@ -17,7 +17,6 @@ export default function Resultpage() {
   }, [mutate]);
 
   const value = data;
-  console.log(data);
   localStorage.setItem("recommend", data?.company_img || "");
   localStorage.setItem("recommendId", JSON.stringify(data?.id) || "");
   localStorage.setItem("total_grade", data?.total_grade || "");

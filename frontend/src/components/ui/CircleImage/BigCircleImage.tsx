@@ -10,7 +10,6 @@ export default function BigCircleImage() {
     <div
       className={`relative  rounded-full w-[11rem] h-[11rem]  flex justify-center items-center`}
     >
-      <div className="z-0 absolute w-[2.3125rem] h-[2.3125rem] bg-brandColor rounded-full top-3 left-3"></div>
       <Image
         src={resultData?.company_img ? resultData?.company_img : example}
         alt="example"

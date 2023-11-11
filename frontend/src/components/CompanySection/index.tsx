@@ -10,7 +10,10 @@ export default function CompanySection() {
   return (
     <SectionContainer className="flex items-center flex-col justify-center py-8 mb-6">
       <BigCircleImage />
-      <InfoTitle title={resultData?.company_name}  />
+      <InfoTitle
+        title={resultData?.company_name}
+        subtitle={resultData?.industry}
+      />
       <CompanyScoreSection />
     </SectionContainer>
   );

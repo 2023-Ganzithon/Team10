@@ -12,6 +12,7 @@ export type RankClassLinkHrefType =
   | "rank/structure";
 
 export type Company3RankType = {
+  id: number;
   industry: string;
   company_name: string;
   company_img: string;

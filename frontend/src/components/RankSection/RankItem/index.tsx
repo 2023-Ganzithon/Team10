@@ -4,12 +4,14 @@ import React from "react";
 import example from "/public/images/example.png";
 
 export default function RankItem({
+  id,
   className,
   index,
   title,
   industry,
   image,
 }: {
+  id: number;
   className?: string;
   index: number;
   title: string;
@@ -29,7 +31,7 @@ export default function RankItem({
           <div className="text-[19px]">{title}</div>
         </div>
       </div>
-      <MoreButton linkHref={`company/1`} />
+      <MoreButton linkHref={`company/${id}`} />
     </div>
   );
 }

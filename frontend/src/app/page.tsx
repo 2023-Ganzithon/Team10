@@ -2,7 +2,7 @@
 import RankSection from "@/components/RankSection";
 import MainInfoSection from "@/components/MainSection/MainInfoSection";
 import MainSurveySection from "@/components/MainSection/MainSurveySection";
-import useGetTotal3Rank from "@/hooks/queries/rank/useGetRank";
+import { useGetTotal3Rank } from "@/hooks/queries/rank/useGetRank";
 
 export default function Home() {
   const { data, isLoading } = useGetTotal3Rank();

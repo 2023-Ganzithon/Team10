@@ -21,5 +21,5 @@ export type PostDataType = {
   stock: string;
   industry: string;
   division: string;
-  user_total_grade: ScoreType;
+  user_total_grade?: ScoreType;
 };

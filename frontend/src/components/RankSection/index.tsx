@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import SectionContainer from "../ui/SectionContainer";
 import SectionHeader from "../Header/SectionHeader";
@@ -18,6 +19,7 @@ export default function RankSection({
   data?: Company3RankType;
   isLoading?: boolean;
 }) {
+  console.log(data);
   return (
     <SectionContainer className="px-8 pt-6 mb-4">
       <SectionHeader title={title} linkHref={linkHref} isMore={isMore} />
@@ -26,10 +28,11 @@ export default function RankSection({
           <LoadingIcon className="w-20 h-20" />
         </div>
       ) : (
-        data?.map(({ company_name, industry, company_img }, index) => (
+        data?.map(({ id, company_name, industry, company_img }, index) => (
           <>
             <RankItem
-              key={company_name}
+              key={id}
+              id={id}
               title={company_name}
               industry={industry}
               image={company_img}
