@@ -1,7 +1,7 @@
 import React from "react";
 import SocialIcon from "@/components/ui/icon/SocialIcon";
 import EnvironmentIcon from "@/components/ui/icon/EnvironmentIcon";
-import StructureIcon from "@/components/ui/icon/structureIcon";
+import DomainIcon from "@/components/ui/icon/DomainIcon";
 import EsgIcon from "@/components/ui/icon/EsgIcon";
 
 export default function Emotion({ number }: { number: number }) {
@@ -12,7 +12,7 @@ export default function Emotion({ number }: { number: number }) {
     } else if (number <= 5) {
       return <EnvironmentIcon />;
     } else if (number <= 8) {
-      return <StructureIcon />;
+      return <DomainIcon />;
     } else {
       return <EsgIcon />;
     }

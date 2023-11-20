@@ -1,5 +1,5 @@
 import React from "react";
-import { SURVEY_QUESTION_LENGTH } from "@/constants/Survey";
+import { SURVEY_QUESTION_LENGTH } from "@/constants/surveys";
 import SectionContainer from "../ui/SectionContainer";
 import SurveyText from "./SurveyText";
 import Emotion from "./Emotion.tsx";

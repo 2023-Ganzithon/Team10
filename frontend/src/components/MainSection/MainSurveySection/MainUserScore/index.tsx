@@ -50,17 +50,6 @@ export default function MainUserScore() {
               {userScore}
             </div>
           )}
-
-          {/* {company ? (
-            <Image
-              src={`${company}`}
-              alt="companyLogo"
-              width={50}
-              height={10}
-            />
-          ) : (
-            <LoadingIcon className="w-8" />
-          )} */}
         </Link>
       </div>
     </SectionContainer>

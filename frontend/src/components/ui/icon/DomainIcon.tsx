@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function StructureIcon({ className }: { className?: string }) {
+export default function DomainIcon({ className }: { className?: string }) {
   return (
     <div className={className}>
       <svg

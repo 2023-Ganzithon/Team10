@@ -1,4 +1,4 @@
-import { SURVEY_QUESTION_LENGTH } from "@/constants/Survey";
+import { SURVEY_QUESTION_LENGTH } from "@/constants/surveys";
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 
