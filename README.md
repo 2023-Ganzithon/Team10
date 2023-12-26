@@ -3,7 +3,7 @@
 # 쓱 - 하고 보는 나의 ESG 정보 , 미쓱(Mesg)
 https://mesg-xi.vercel.app/
 ---
-![image](https://github.com/2023-Ganzithon/Team10/assets/126189239/fed58ec3-df63-4a36-941e-c532cfb2a139)
+![1](https://github.com/fjqmqjrm/mesg/assets/126189239/430d81e0-be5f-4b77-ac1d-647c4db2f15d)
 
 
 1️⃣ **미쓱(Mesg)은 지속 가능한 미래를 위해 투자하는 똑똑한 투자자들을 위한 서비스를 제공합니다.** 
@@ -19,6 +19,12 @@ https://mesg-xi.vercel.app/
 ## 📲 서브 기능
 
 💬 **기업별 실시간 커뮤니티 제공**
+
+## 개발진
+
+![Slide 16_9 - 24](https://github.com/fjqmqjrm/mesg/assets/126189239/8c4981a0-a418-427b-907b-ff5050ee39b0)
+
+
 ### 커밋 컨벤션
 
 - feat : 새로운 기능 추가
